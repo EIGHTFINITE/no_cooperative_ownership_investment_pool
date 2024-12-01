@@ -15,16 +15,20 @@
 	}
 	
 	on_activate = {		
+		seize_investment_pool = yes
 		custom_tooltip = {
 			text = enact_law_radical_leftist_economy_warning_desc
 		}	
 	}
 	
 	modifier = {
+		country_disable_investment_pool_bool = yes
+		
 		state_shopkeepers_investment_pool_efficiency_mult = 0.25	
 		state_farmers_investment_pool_efficiency_mult = 0.25
 		country_private_construction_allocation_mult = 0.35
 		country_government_dividends_reinvestment_add = 1.0
+		country_max_companies_add = 1
 		
 		building_group_bg_manufacturing_allowed_collectivization_add = 1.0
 		building_group_bg_mining_allowed_collectivization_add = 1.0
@@ -129,6 +133,7 @@ law_command_economy = {
 		building_nationalization_radicals_mult = -0.75
 		country_government_dividends_efficiency_add = 0.4
 		country_private_construction_allocation_mult = 0.1
+		country_max_companies_add = 1
 		
 		country_leverage_resistance_mult = 0.25
 
