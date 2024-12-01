@@ -1,0 +1,2 @@
+﻿l_braz_por:
+ law_command_economy_tt:0 "Pode promulgar [GetLawType('law_command_economy').GetName]"

@@ -1,0 +1,2 @@
+﻿l_polish:
+ law_command_economy_tt:0 "Może uchwalić [GetLawType('law_command_economy').GetName]"

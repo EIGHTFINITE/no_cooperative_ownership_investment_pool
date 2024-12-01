@@ -1,0 +1,2 @@
+﻿l_spanish:
+ law_command_economy_tt:0 "Puede promulgar [GetLawType('law_command_economy').GetName]"
