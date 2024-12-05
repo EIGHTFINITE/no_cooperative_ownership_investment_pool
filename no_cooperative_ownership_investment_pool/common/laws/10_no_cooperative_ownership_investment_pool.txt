@@ -158,6 +158,8 @@ law_cooperative_ownership = {
 		if = {
 			limit = {
 				AND = {
+					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law = law_type:law_corporate_state }
 					has_technology_researched = central_planning
 					NOT = { has_law = law_type:law_anarchy }
 					OR = {
