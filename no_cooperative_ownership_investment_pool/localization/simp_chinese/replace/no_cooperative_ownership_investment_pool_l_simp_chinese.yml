@@ -1,2 +1,3 @@
 ﻿l_simp_chinese:
  law_command_economy_tt:0 "可以颁布 [GetLawType('law_command_economy').GetName]"
+ modifier_cooperative_ownership_command_economy_swap:0 "$from_command_economy$"
