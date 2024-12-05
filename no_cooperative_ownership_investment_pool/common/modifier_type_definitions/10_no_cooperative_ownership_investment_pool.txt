@@ -1,0 +1,8 @@
+﻿country_allow_national_collectivization_bool={
+	decimals=1
+	color=neutral
+	boolean=yes
+	game_data={
+		ai_value=0
+	}
+}
