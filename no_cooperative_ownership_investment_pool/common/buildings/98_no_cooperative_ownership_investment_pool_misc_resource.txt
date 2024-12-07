@@ -15,6 +15,10 @@
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_logging_camp }
+	}
 }
 
 building_rubber_plantation = {
@@ -38,6 +42,10 @@ building_rubber_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_rubber_plantation }
+	}
 }
 
 building_fishing_wharf = {
@@ -57,6 +65,10 @@ building_fishing_wharf = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_fishing.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_fishing_wharf }
+	}
 }
 
 building_whaling_station = {
@@ -80,6 +92,10 @@ building_whaling_station = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_fishing.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_whaling_station }
+	}
 }
 
 
@@ -101,4 +117,8 @@ building_oil_rig = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_oil.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_oil_rig }
+	}
 }

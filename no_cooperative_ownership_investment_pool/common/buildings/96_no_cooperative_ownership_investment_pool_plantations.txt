@@ -19,6 +19,10 @@ building_coffee_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_coffee_plantation }
+	}
 }
 
 building_cotton_plantation = {
@@ -40,6 +44,10 @@ building_cotton_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_cotton_plantation }
+	}
 
 	ai_value = {
 		value = 1000
@@ -75,6 +83,10 @@ building_dye_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_dye_plantation }
+	}
 	
 	ai_value = {
 		value = 1000
@@ -117,6 +129,10 @@ building_opium_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_opium_plantation }
+	}
 	
 	ai_value = {
 		value = 1000
@@ -152,6 +168,10 @@ building_tea_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_tea_plantation }
+	}
 	
 	ai_value = {
 		value = 1000
@@ -187,6 +207,10 @@ building_tobacco_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_tobacco_plantation }
+	}
 	
 	ai_value = {
 		value = 1000
@@ -222,6 +246,10 @@ building_sugar_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_sugar_plantation }
+	}
 }
 
 building_banana_plantation = {
@@ -243,6 +271,10 @@ building_banana_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_banana_plantation }
+	}
 }
 
 building_silk_plantation = {
@@ -264,6 +296,10 @@ building_silk_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_silk_plantation }
+	}
 }
 
 building_vineyard_plantation = {
@@ -285,4 +321,8 @@ building_vineyard_plantation = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_vineyard_plantation }
+	}
 }

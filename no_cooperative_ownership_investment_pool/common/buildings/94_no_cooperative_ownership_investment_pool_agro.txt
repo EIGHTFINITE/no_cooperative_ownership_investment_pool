@@ -24,6 +24,10 @@ building_rye_farm = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_rye_farm }
+	}
 }
 
 building_wheat_farm = {
@@ -50,6 +54,10 @@ building_wheat_farm = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_wheat_farm }
+	}
 }
 
 building_rice_farm = {
@@ -76,6 +84,10 @@ building_rice_farm = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_rice_farm }
+	}
 }
 
 building_maize_farm = {
@@ -102,6 +114,10 @@ building_maize_farm = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_maize_farm }
+	}
 }
 
 building_millet_farm = {
@@ -128,6 +144,10 @@ building_millet_farm = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_millet_farm }
+	}
 }
 
 building_livestock_ranch = {
@@ -155,4 +175,8 @@ building_livestock_ranch = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_livestock_ranch }
+	}
 }

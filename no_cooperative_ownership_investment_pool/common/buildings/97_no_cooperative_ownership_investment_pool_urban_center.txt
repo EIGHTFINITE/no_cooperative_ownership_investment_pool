@@ -1,34 +1,5 @@
 ﻿# URBANIZATION
 
-building_urban_center = {
-	building_group = bg_service
-	icon = "gfx/interface/icons/building_icons/urban_center.dds"
-	city_type = city
-	residence_points_per_level = 0
-	
-	unlocking_technologies = { 
-		urbanization
-	}
-	
-	production_method_groups = {
-		pmg_amenities
-		pmg_street_lighting
-		pmg_public_transport
-		pmg_urban_clergy
-	}
-	
-	buildable = no
-	expandable = no
-	downsizeable = no
-	can_switch_owner = no
-	
-	terrain_manipulator = urban_city
-	
-	ownership_type = self
-
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
-}
-
 building_arts_academy = {
 	building_group = bg_arts
 
@@ -53,6 +24,10 @@ building_arts_academy = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_arts_academy }
+	}
 }
 
 building_power_plant = {
@@ -99,4 +74,8 @@ building_power_plant = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_power_plant }
+	}
 }

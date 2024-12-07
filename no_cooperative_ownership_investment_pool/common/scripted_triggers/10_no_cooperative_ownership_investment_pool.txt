@@ -1,0 +1,34 @@
+﻿can_build_private_cooperative_ownership_trigger = {
+	trigger_if = {
+		limit = {
+			owner = scope:investor_country
+			owner = {
+				is_player = yes
+				has_law = law_type:law_cooperative_ownership
+			}
+		}
+		trigger_if = {
+			limit = {
+				NOT = {
+					owner = {
+						is_construction_paused = yes
+						has_modifier = modifier_cooperative_ownership_construction_paused
+						NOT = { has_modifier = modifier_cooperative_ownership_construction_unpaused }
+					}
+				}
+			}
+			always = no
+		}
+		trigger_else_if = {
+			limit = {
+				NOT = {
+					any_scope_building = {
+						is_building_type = $building_1$
+						is_under_construction = no
+					}
+				}
+			}
+			always = no
+		}
+	}
+}

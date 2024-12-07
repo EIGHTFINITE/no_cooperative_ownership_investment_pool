@@ -23,6 +23,10 @@ building_food_industry = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_food_industry }
+	}
 }
 
 building_textile_mills = {
@@ -47,6 +51,10 @@ building_textile_mills = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_textile_mills }
+	}
 }
 
 building_furniture_manufacturies = {
@@ -71,6 +79,10 @@ building_furniture_manufacturies = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_furniture_manufacturies }
+	}
 }
 
 building_glassworks = {
@@ -93,6 +105,10 @@ building_glassworks = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_glassworks }
+	}
 }
 
 building_tooling_workshops = {
@@ -119,6 +135,10 @@ building_tooling_workshops = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_tooling_workshops }
+	}
 }
 
 building_paper_mills = {
@@ -143,6 +163,10 @@ building_paper_mills = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_paper_mills }
+	}
 }
 
 building_chemical_plants = {
@@ -176,6 +200,10 @@ building_chemical_plants = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_chemical_plants }
+	}
 }
 
 building_explosives_factory = {
@@ -208,6 +236,10 @@ building_explosives_factory = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_explosives_factory }
+	}
 }
 
 building_synthetics_plants = {
@@ -240,6 +272,10 @@ building_synthetics_plants = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_synthetics_plants }
+	}
 }
 
 building_steel_mills = {
@@ -274,6 +310,10 @@ building_steel_mills = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_steel_mills }
+	}
 }
 
 building_motor_industry = {
@@ -307,6 +347,10 @@ building_motor_industry = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_motor_industry }
+	}
 }
 
 building_shipyards = {
@@ -332,6 +376,10 @@ building_shipyards = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_harbour.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_shipyards }
+	}
 }
 
 building_military_shipyards = {
@@ -357,6 +405,10 @@ building_military_shipyards = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_harbour.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_military_shipyards }
+	}
 }
 
 building_war_machine_industry = {
@@ -391,6 +443,10 @@ building_war_machine_industry = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_war_machine_industry }
+	}
 }
 
 building_electrics_industry = {
@@ -423,6 +479,10 @@ building_electrics_industry = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_electrics_industry }
+	}
 }
 
 building_arms_industry = {
@@ -446,6 +506,10 @@ building_arms_industry = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_arms_industry }
+	}
 }
 
 building_artillery_foundries = {
@@ -469,6 +533,10 @@ building_artillery_foundries = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_artillery_foundries }
+	}
 }
 
 building_munition_plants = {
@@ -503,4 +571,8 @@ building_munition_plants = {
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+
+	can_build_private = {
+		can_build_private_cooperative_ownership_trigger = { building_1 = building_munition_plants }
+	}
 }
