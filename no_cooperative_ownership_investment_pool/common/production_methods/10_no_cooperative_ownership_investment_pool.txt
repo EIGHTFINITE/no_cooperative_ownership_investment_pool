@@ -1,0 +1,78 @@
+﻿pm_construction_ownership_privately_owned = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	is_hidden_when_unavailable = yes
+
+	replacement_if_valid = pm_construction_ownership_publicly_traded
+
+	disallowing_laws = {
+		law_cooperative_ownership
+		law_command_economy
+	}
+}
+
+pm_construction_ownership_publicly_traded = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	is_hidden_when_unavailable = yes
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	disallowing_laws = {
+		law_cooperative_ownership
+		law_command_economy
+	}
+}
+
+pm_construction_ownership_government_run = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_command_economy
+	}
+
+	country_modifiers = {
+		unscaled = {
+			country_custom_tooltip_disable_investment_pool_bool = yes
+		}
+	}
+}
+
+pm_construction_ownership_worker_cooperative = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
+	country_modifiers = {
+		unscaled = {
+			country_custom_tooltip_force_collectivization_bool = yes
+		}
+	}
+}
+
+pm_principle_freedom_of_movement_3 = {
+	texture = "gfx/interface/icons/production_method_icons/freedom_of_movement.dds"
+
+	is_hidden_when_unavailable = yes
+	
+	unlocking_principles = {
+		principle_freedom_of_movement_3 
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.2
+		}
+	}
+}
+
+pm_freedom_of_movement_no_effect = {
+	texture = "gfx/interface/icons/production_method_icons/no_freedom_of_movement.dds"
+
+	replacement_if_valid = pm_principle_freedom_of_movement_3
+}
