@@ -1,0 +1,35 @@
+﻿namespace = no_cooperative_ownership_investment_pool
+
+no_cooperative_ownership_investment_pool.1 = {
+	type = country_event
+	hidden = yes
+	orphan = yes
+	immediate = {
+		if = {
+			limit = {
+				has_variable = construction_ownership_crash_fix_active
+			}
+			remove_variable = construction_ownership_crash_fix_active
+		}
+	}
+}
+
+no_cooperative_ownership_investment_pool.2 = {
+	type = country_event
+	hidden = yes
+	orphan = yes
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = modifier_cooperative_ownership_construction_unpaused
+			}
+			remove_modifier = modifier_cooperative_ownership_construction_unpaused
+		}
+		if = {
+			limit = {
+				has_modifier = modifier_cooperative_ownership_construction_paused
+			}
+			remove_modifier = modifier_cooperative_ownership_construction_paused
+		}
+	}
+}

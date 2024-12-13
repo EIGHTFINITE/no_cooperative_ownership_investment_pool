@@ -2,7 +2,7 @@
   "name" : "no_cooperative_ownership_investment_pool",
   "id" : "",
   "version" : "1.0",
-  "supported_game_version" : "1.8.*",
+  "supported_game_version" : "1.8.3",
   "short_description" : "",
   "tags" : ["Balance","Economy And Buildings","Fixes","Gameplay","Interest Groups","Pops"],
   "relationships" : [],
