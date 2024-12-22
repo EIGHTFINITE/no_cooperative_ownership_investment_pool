@@ -3694,11 +3694,6 @@ no_cooperative_ownership_investment_pool.2 = {
 						NOT = { has_modifier = modifier_cooperative_ownership_construction_unpaused }
 					}
 					add_modifier = { name = modifier_cooperative_ownership_construction_unpaused }
-				}
-				if = {
-					limit = {
-						construction_queue_num_queued_private_levels > 0
-					}
 					set_variable = { name = seize_investment_pool_gold_transfer_var value = investment_pool }
 					add_treasury = {
 						value = var:seize_investment_pool_gold_transfer_var
