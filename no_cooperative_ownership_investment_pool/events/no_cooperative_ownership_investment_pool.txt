@@ -3,7 +3,6 @@
 no_cooperative_ownership_investment_pool.1 = {
 	type = country_event
 	hidden = yes
-	orphan = yes
 	immediate = {
 		if = {
 			limit = {
@@ -17,7 +16,6 @@ no_cooperative_ownership_investment_pool.1 = {
 no_cooperative_ownership_investment_pool.2 = {
 	type = country_event
 	hidden = yes
-	orphan = yes
 	immediate = {
 		if = {
 			limit = {
@@ -31,5 +29,12 @@ no_cooperative_ownership_investment_pool.2 = {
 			}
 			remove_modifier = modifier_cooperative_ownership_construction_paused
 		}
+	}
+}
+
+no_cooperative_ownership_investment_pool.3 = {
+	type = country_event
+	hidden = yes
+	immediate = {
 	}
 }
