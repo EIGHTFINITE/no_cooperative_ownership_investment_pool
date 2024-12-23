@@ -6,6 +6,12 @@ no_cooperative_ownership_investment_pool.1 = {
 	immediate = {
 		if = {
 			limit = {
+				NOT = { has_variable = construction_ownership_crash_fix_active }
+			}
+			set_variable = construction_ownership_crash_fix_active
+		}
+		if = {
+			limit = {
 				has_law = law_type:law_command_economy
 			}
 			every_scope_state = {
@@ -5039,5 +5045,21 @@ no_cooperative_ownership_investment_pool.2 = {
 				}
 			}
 		}
+	}
+}
+
+no_cooperative_ownership_investment_pool.3 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		add_modifier = { name = modifier_cooperative_ownership_construction_unpaused }
+		set_variable = { name = seize_investment_pool_gold_transfer_var value = investment_pool }
+		add_treasury = {
+			value = var:seize_investment_pool_gold_transfer_var
+			multiply = -1.0
+		}
+		seize_investment_pool = yes
+		add_investment_pool = var:seize_investment_pool_gold_transfer_var
+		remove_variable = seize_investment_pool_gold_transfer_var
 	}
 }

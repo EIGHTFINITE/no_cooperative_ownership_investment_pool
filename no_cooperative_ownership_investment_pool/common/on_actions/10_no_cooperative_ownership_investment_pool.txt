@@ -6,9 +6,15 @@ on_monthly_pulse_country = {
 	effect = {
 		if = {
 			limit = {
+				NOT = { has_variable = bankruptcy_disbands_army_active }
+			}
+			trigger_event = { id = bankruptcy_disbands_army.1 }
+		}
+		trigger_event = { id = migration_fixes.1 }
+		if = {
+			limit = {
 				NOT = { has_variable = construction_ownership_crash_fix_active }
 			}
-			set_variable = construction_ownership_crash_fix_active
 			trigger_event = { id = no_cooperative_ownership_investment_pool.1 }
 		}
 		if = {
@@ -18,15 +24,7 @@ on_monthly_pulse_country = {
 				NOT = { has_modifier = modifier_cooperative_ownership_construction_paused }
 				NOT = { has_modifier = modifier_cooperative_ownership_construction_unpaused }
 			}
-			add_modifier = { name = modifier_cooperative_ownership_construction_unpaused }
-			set_variable = { name = seize_investment_pool_gold_transfer_var value = investment_pool }
-			add_treasury = {
-				value = var:seize_investment_pool_gold_transfer_var
-				multiply = -1.0
-			}
-			seize_investment_pool = yes
-			add_investment_pool = var:seize_investment_pool_gold_transfer_var
-			remove_variable = seize_investment_pool_gold_transfer_var
+			trigger_event = { id = no_cooperative_ownership_investment_pool.3 }
 			trigger_event = { id = no_cooperative_ownership_investment_pool.2 }
 		}
 	}
