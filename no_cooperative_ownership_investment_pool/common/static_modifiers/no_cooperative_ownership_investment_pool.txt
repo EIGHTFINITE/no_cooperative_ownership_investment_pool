@@ -9,11 +9,3 @@
 	country_government_dividends_efficiency_add = 0.4
 	country_leverage_resistance_mult = 0.25
 }
-
-modifier_cooperative_ownership_construction_paused = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-}
-
-modifier_cooperative_ownership_construction_unpaused = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-}

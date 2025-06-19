@@ -1,5 +1,3 @@
 ﻿l_english:
  law_command_economy_tt:0 "Can enact [GetLawType('law_command_economy').GetName]"
  modifier_cooperative_ownership_command_economy_swap:0 "$from_command_economy$"
- modifier_cooperative_ownership_construction_paused:0 "Collectivized $concept_construction$"
- modifier_cooperative_ownership_construction_unpaused:0 "$concept_government_construction$"
