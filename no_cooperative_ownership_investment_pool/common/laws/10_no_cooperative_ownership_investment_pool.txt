@@ -1,14 +1,18 @@
 ﻿law_anarchy = {
 	group = lawgroup_distribution_of_power
-	
+
 	icon = "gfx/interface/icons/law_icons/anarchy.dds"
-	
+
 	progressiveness = 200
 
 	unlocking_technologies = {
-		anarchism 
+		anarchism
 	}
-	
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
 	modifier = {
 		state_pop_pol_str_add = 1
 		country_legitimacy_govt_total_clout_add = 100
@@ -18,14 +22,6 @@
 	}
 
 	can_enact = {
-		OR = {
-			has_technology_researched = socialism
-			has_technology_researched = corporatism
-		}
-		OR = {
-			has_law = law_type:law_council_republic
-			has_law = law_type:law_corporate_state
-		}
 		trigger_if = {
 			limit = {
 				c:BIC ?= ROOT
@@ -47,14 +43,14 @@
 			remove_modifier = missouri_compromise
 		}
 	}
-	
+
 	ai_will_do = {
 		exists = ruler
 		ruler = {
 			has_ideology = ideology:ideology_anarchist
 		}
 	}
-	
+
 	can_impose = {
 		OR = {
 			AND = {
@@ -70,36 +66,36 @@
 			}
 		}
 	}
-	
+
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
-	
+
 	ai_impose_chance = {
 		value = 0
-		
+
 		if = {
 			limit = {
 				has_law = law_type:law_anarchy
-				has_strategy = ai_strategy_egalitarian_agenda	
+				has_strategy = ai_strategy_egalitarian_agenda
 				scope:target_country = { # Is their law different enough from what we want to impose?
 					NOT = { has_law = law_type:law_universal_suffrage }
 				}
 			}
-			
+
 			add = base_impose_law_weight
 		}
-			
+
 		if = {
 			limit = {
 				scope:target_country = {
 					c:BIC ?= ROOT
-					OR = {	
+					OR = {
 						has_journal_entry = je_british_dictate_plantations
 						has_journal_entry = je_british_dictate_military
 						has_journal_entry = je_british_dictate_universities
@@ -113,138 +109,83 @@
 
 law_cooperative_ownership = {
 	group = lawgroup_economic_system
-	
+
 	icon = "gfx/interface/icons/law_icons/cooperative_ownership.dds"
-	
+
 	progressiveness = 100
-	
+
 	disallowing_laws = {
 		law_serfdom
 	}
-	
-	can_enact = {
-		OR = {
-			has_technology_researched = socialism
-			has_technology_researched = corporatism
-		}
-		OR = {
-			has_law = law_type:law_council_republic
-			has_law = law_type:law_corporate_state
-			trigger_if = {
-				limit = {
-					has_technology_researched = central_planning
-				}
-				custom_tooltip = {
-					text = law_command_economy_tt
-					AND = {
-						NOT = { has_law = law_type:law_anarchy }
-						OR = {
-							has_law = law_type:law_autocracy
-							has_law = law_type:law_oligarchy
-							has_law = law_type:law_single_party_state
-							has_law = law_type:law_technocracy
-						}
-					}
-				}
-			}
-		}
+
+	unlocking_laws = {
+		law_council_republic
+		law_corporate_state
 	}
-	
-	on_activate = {		
-		seize_investment_pool = yes
+
+	on_activate = {
 		custom_tooltip = {
 			text = enact_law_radical_leftist_economy_warning_desc
-		}	
-		if = {
-			limit = {
-				AND = {
-					NOT = { has_law = law_type:law_council_republic }
-					NOT = { has_law = law_type:law_corporate_state }
-					has_technology_researched = central_planning
-					NOT = { has_law = law_type:law_anarchy }
-					OR = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
-						has_law = law_type:law_single_party_state
-						has_law = law_type:law_technocracy
-					}
-				}
-			}
-			add_modifier = { name = modifier_cooperative_ownership_command_economy_swap }
 		}
 	}
-	
-	on_deactivate = {
-		if = {
-			limit = {
-				has_modifier = modifier_cooperative_ownership_command_economy_swap
-			}
-			remove_modifier = modifier_cooperative_ownership_command_economy_swap
-		}
-	}
-	
+
 	modifier = {
-		country_disable_investment_pool_bool = yes
-		
-		state_shopkeepers_investment_pool_efficiency_mult = 0.25	
+		state_shopkeepers_investment_pool_efficiency_mult = 0.25
 		state_farmers_investment_pool_efficiency_mult = 0.25
-		country_private_construction_allocation_mult = 0.1
+		country_private_construction_allocation_mult = 0.35
 		country_government_dividends_reinvestment_add = 1.0
-		country_max_companies_add = 1
-		
+		country_free_charters_add = 1
+
 		building_group_bg_manufacturing_allowed_collectivization_add = 1.0
 		building_group_bg_mining_allowed_collectivization_add = 1.0
 		building_group_bg_extraction_allowed_collectivization_add = 1.0
 		building_group_bg_power_allowed_collectivization_add = 1.0
 		building_group_bg_private_infrastructure_allowed_collectivization_add = 1.0
 		building_group_bg_arts_allowed_collectivization_add = 1.0
-		
-		country_allow_national_collectivization_bool = yes
+
 		country_foreign_collectivization_bool = yes
-		country_disable_privatization_bool = yes
-		country_company_pay_to_establish_bool = yes
 	}
-	
+
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
-		
+
 		if = {
-			limit = { 
+			limit = {
 				has_law = law_type:law_council_republic
 			}
 			add = 250
 		}
-		
+
 		if = {
-			limit = { 
+			limit = {
 				has_law = law_type:law_council_republic
 			}
 			add = 100
 		}
 	}
-	
+
 	ai_impose_chance = {
 		value = 0
-		
+
 		if = {
 			limit = {
-				has_law = law_type:law_cooperative_ownership			
+				has_law = law_type:law_cooperative_ownership
 			}
-			
+
 			add = base_impose_law_weight
 			multiply = 10.0
 		}
-			
+
 		if = {
 			limit = {
 				scope:target_country = {
 					c:BIC ?= this
-					OR = {	
+					OR = {
 						has_journal_entry = je_british_dictate_plantations
 						has_journal_entry = je_british_dictate_military
 						has_journal_entry = je_british_dictate_universities
@@ -253,115 +194,5 @@ law_cooperative_ownership = {
 			}
 			multiply = 0
 		}
-	}	
-}
-
-law_command_economy = {
-	group = lawgroup_economic_system
-	
-	icon = "gfx/interface/icons/law_icons/command_economy.dds"
-	
-	progressiveness = 100
-	
-	disallowing_laws = {
-		law_serfdom
-		law_anarchy
 	}
-	
-	unlocking_technologies = {
-		central_planning
-	}
-	
-	unlocking_laws = {
-		law_autocracy
-		law_oligarchy
-		law_single_party_state
-		law_technocracy
-	}	
-	
-	on_activate = {
-		seize_investment_pool = yes
-		custom_tooltip = {
-			text = enact_law_radical_leftist_economy_warning_desc
-		}	
-	}
-	
-	modifier = {
-		country_disable_investment_pool_bool = yes
-		
-		country_authority_mult = 0.25
-		country_bureaucrats_pol_str_mult = 0.25
-		building_nationalization_cost_mult = -0.5
-		building_nationalization_radicals_mult = -0.75
-		country_government_dividends_efficiency_add = 0.4
-		country_private_construction_allocation_mult = 0.1
-		country_max_companies_add = 1
-		
-		country_leverage_resistance_mult = 0.25
-
-		country_disable_privatization_bool = yes
-	}
-	
-	ai_will_do = {
-		OR = {
-			has_law = law_type:law_technocracy
-			AND = {
-				has_law = law_type:law_council_republic
-				ruler ?= {
-					has_ideology = ideology:ideology_vanguardist
-					has_ideology = ideology:ideology_communist
-				}			
-			}
-		}
-	}
-
-	ai_enact_weight_modifier = { #Petitions
-		value = 0
-		
-		if = {
-			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
-			add = 750
-		}
-		
-		if = {
-			limit = { 
-				has_law = law_type:law_council_republic
-			}
-			add = 250
-		}
-		
-		if = {
-			limit = { 
-				has_law = law_type:law_technocracy
-			}
-			add = 100
-		}
-	}
-	
-	ai_impose_chance = {
-		value = 0
-		
-		if = {
-			limit = {
-				has_law = law_type:law_command_economy			
-			}
-			
-			add = base_impose_law_weight
-			multiply = 10.0
-		}
-			
-		if = {
-			limit = {
-				scope:target_country = {
-					c:BIC ?= this
-					OR = {	
-						has_journal_entry = je_british_dictate_plantations
-						has_journal_entry = je_british_dictate_military
-						has_journal_entry = je_british_dictate_universities
-					}
-				}
-			}
-			multiply = 0
-		}
-	}	
 }
