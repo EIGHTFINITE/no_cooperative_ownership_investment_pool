@@ -1,8 +1,0 @@
-﻿country_custom_tooltip_fake_disable_investment_pool_bool={
-	decimals=1
-	color=bad
-	boolean=yes
-	game_data={
-		ai_value=0
-	}
-}

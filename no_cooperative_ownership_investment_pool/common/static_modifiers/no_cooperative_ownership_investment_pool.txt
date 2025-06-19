@@ -12,11 +12,8 @@
 
 modifier_cooperative_ownership_construction_paused = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	country_private_construction_allocation_mult = 0.8
-	country_force_collectivization_bool = yes
 }
 
 modifier_cooperative_ownership_construction_unpaused = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	country_disable_investment_pool_bool = yes
 }
