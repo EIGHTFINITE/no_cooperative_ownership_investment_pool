@@ -112,26 +112,3 @@ building_gold_mine = {
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
-
-building_gold_fields = {
-	building_group = bg_gold_fields
-	icon = "gfx/interface/icons/building_icons/gold_fields.dds"
-	city_type = mine
-	levels_per_mesh = 5
-	buildable = no
-	expandable = no
-	downsizeable = no
-	can_switch_owner = no
-	terrain_manipulator = mining
-
-	unlocking_technologies = {
-		prospecting
-	}
-
-	production_method_groups = {
-		pmg_base_building_gold_fields
-	}
-	ownership_type = self
-
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
-}
