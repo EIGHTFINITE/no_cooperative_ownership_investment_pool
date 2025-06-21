@@ -21,6 +21,20 @@ building_arts_academy = {
 
 	required_construction = construction_cost_medium
 
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
@@ -65,6 +79,24 @@ building_power_plant = {
 		owner = {
 			NOT = { has_law = law_type:law_industry_banned }
 		}
+	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
+	should_auto_expand = {
+		xor_power_auto_expand_rule = yes
 	}
 
 	ownership_type = self

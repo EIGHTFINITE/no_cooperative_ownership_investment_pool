@@ -154,7 +154,18 @@ law_cooperative_ownership = {
 	}
 
 	on_activate = {
+		hidden_effect = {
+			set_variable = { name = seize_investment_pool_gold_transfer_var value = investment_pool }
+			add_treasury = {
+				value = var:seize_investment_pool_gold_transfer_var
+				multiply = -1.0
+			}
+		}
 		seize_investment_pool = yes
+		hidden_effect = {
+			add_investment_pool = var:seize_investment_pool_gold_transfer_var
+			remove_variable = seize_investment_pool_gold_transfer_var
+		}
 		custom_tooltip = {
 			text = enact_law_radical_leftist_economy_warning_desc
 		}
@@ -176,7 +187,7 @@ law_cooperative_ownership = {
 	}
 
 	modifier = {
-		country_disable_investment_pool_bool = yes
+		country_custom_tooltip_fake_disable_investment_pool_bool = yes
 
 		state_shopkeepers_investment_pool_efficiency_mult = 0.25
 		state_farmers_investment_pool_efficiency_mult = 0.25

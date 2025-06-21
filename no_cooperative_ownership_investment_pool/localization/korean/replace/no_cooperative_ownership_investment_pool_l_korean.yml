@@ -1,3 +1,7 @@
 ﻿l_korean:
  law_command_economy_tt:0 "[GetLawType('law_command_economy').GetName] 제정 가능"
  modifier_cooperative_ownership_command_economy_swap:0 "$from_command_economy$"
+ country_disable_investment_pool_bool:0 "투자 원천금 비활성화"
+ country_disable_investment_pool_bool_desc:0 "모든 [concept_investment_pool] 재투자와 사용을 금지"
+ country_custom_tooltip_fake_disable_investment_pool_bool:0 "$country_disable_investment_pool_bool$"
+ country_custom_tooltip_fake_disable_investment_pool_bool_desc:0 "$country_disable_investment_pool_bool_desc$"

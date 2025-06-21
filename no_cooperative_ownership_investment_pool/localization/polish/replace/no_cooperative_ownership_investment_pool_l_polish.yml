@@ -1,3 +1,7 @@
 ﻿l_polish:
  law_command_economy_tt:0 "Może uchwalić [GetLawType('law_command_economy').GetName]"
  modifier_cooperative_ownership_command_economy_swap:0 "$from_command_economy$"
+ country_disable_investment_pool_bool:0 "Zablokuj pulę inwestycyjną"
+ country_disable_investment_pool_bool_desc:0 "Nie zezwalaj, aby środki przeznaczone na reinwestycje trafiały do [Concept('concept_investment_pool', 'puli inwestycyjnej')] oraz zablokuj możliwość korzystania z niej"
+ country_custom_tooltip_fake_disable_investment_pool_bool:0 "$country_disable_investment_pool_bool$"
+ country_custom_tooltip_fake_disable_investment_pool_bool_desc:0 "$country_disable_investment_pool_bool_desc$"

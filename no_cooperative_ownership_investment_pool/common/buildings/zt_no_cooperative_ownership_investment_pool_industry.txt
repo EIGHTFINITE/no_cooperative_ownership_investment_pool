@@ -20,6 +20,21 @@ building_food_industry = {
 	}
 
 	required_construction = construction_cost_high
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
@@ -44,6 +59,21 @@ building_textile_mills = {
 	}
 
 	required_construction = construction_cost_high
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
@@ -68,6 +98,21 @@ building_furniture_manufacturies = {
 	}
 
 	required_construction = construction_cost_high
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
@@ -90,6 +135,21 @@ building_glassworks = {
 	}
 
 	required_construction = construction_cost_high
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
@@ -116,6 +176,21 @@ building_tooling_workshops = {
 	required_construction = construction_cost_high
 
 	ai_value = 2000 # Tools are very important
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
@@ -140,6 +215,21 @@ building_paper_mills = {
 	}
 
 	required_construction = construction_cost_high
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
@@ -168,6 +258,20 @@ building_chemical_plants = {
 				OR = {
 					has_law = law_type:law_industry_banned
 					has_law = law_type:law_extraction_economy
+				}
+			}
+		}
+	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
 				}
 			}
 		}
@@ -205,6 +309,21 @@ building_explosives_factory = {
 			}
 		}
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -237,6 +356,21 @@ building_synthetics_plants = {
 			}
 		}
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -271,6 +405,21 @@ building_steel_mills = {
 			}
 		}
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -303,6 +452,21 @@ building_motor_industry = {
 			}
 		}
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -328,6 +492,21 @@ building_shipyards = {
 	potential = {
 		is_coastal = yes
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_harbour.dds"
@@ -353,6 +532,21 @@ building_military_shipyards = {
 	potential = {
 		is_coastal = yes
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_harbour.dds"
@@ -387,6 +581,21 @@ building_automotive_industry = {
 			}
 		}
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -419,6 +628,21 @@ building_electrics_industry = {
 			}
 		}
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -442,6 +666,21 @@ building_arms_industry = {
 	}
 
 	required_construction = construction_cost_high
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -465,6 +704,21 @@ building_artillery_foundries = {
 	}
 
 	required_construction = construction_cost_high
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
@@ -499,6 +753,21 @@ building_munition_plants = {
 			}
 		}
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"

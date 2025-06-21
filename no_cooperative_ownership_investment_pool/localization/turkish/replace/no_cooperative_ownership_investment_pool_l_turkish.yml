@@ -1,3 +1,7 @@
 ﻿l_turkish:
  law_command_economy_tt:0 "[GetLawType('law_command_economy').GetName]'yu hayata geçirebilir"
  modifier_cooperative_ownership_command_economy_swap:0 "$from_command_economy$"
+ country_disable_investment_pool_bool:0 "Yatırım Havuzunu Devre Dışı Bırak"
+ country_disable_investment_pool_bool_desc:0 "[Concept('concept_investment_pool', 'Yatırım Havuzuna')] yeniden yatırım yapmayı ve [Concept('concept_investment_pool', 'Yatırım Havuzunun')] kullanımını yasakla"
+ country_custom_tooltip_fake_disable_investment_pool_bool:0 "$country_disable_investment_pool_bool$"
+ country_custom_tooltip_fake_disable_investment_pool_bool_desc:0 "$country_disable_investment_pool_bool_desc$"

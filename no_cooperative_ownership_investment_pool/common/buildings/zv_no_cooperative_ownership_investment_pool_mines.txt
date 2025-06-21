@@ -15,6 +15,21 @@
 		pmg_steam_automation_building_coal_mine
 		pmg_train_automation_building_coal_mine
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
@@ -38,6 +53,21 @@ building_iron_mine = {
 		pmg_steam_automation_building_iron_mine
 		pmg_train_automation_building_iron_mine
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
@@ -60,6 +90,21 @@ building_lead_mine = {
 		pmg_steam_automation_building_lead_mine
 		pmg_train_automation_building_lead_mine
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
@@ -82,6 +127,21 @@ building_sulfur_mine = {
 		pmg_steam_automation_building_sulfur_mine
 		pmg_train_automation_building_sulfur_mine
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
@@ -108,6 +168,21 @@ building_gold_mine = {
 		pmg_steam_automation_building_gold_mine
 		pmg_train_automation_building_gold_mine
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"

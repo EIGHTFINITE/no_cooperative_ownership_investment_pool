@@ -1,3 +1,7 @@
 ﻿l_french:
  law_command_economy_tt:0 "Peut promulguer [GetLawType('law_command_economy').GetName]"
  modifier_cooperative_ownership_command_economy_swap:0 "$from_command_economy$"
+ country_disable_investment_pool_bool:0 "Désactivation du fonds d’investissement"
+ country_disable_investment_pool_bool_desc:0 "Interdiction de tout réinvestissement et de toute utilisation du [concept_investment_pool|l]"
+ country_custom_tooltip_fake_disable_investment_pool_bool:0 "$country_disable_investment_pool_bool$"
+ country_custom_tooltip_fake_disable_investment_pool_bool_desc:0 "$country_disable_investment_pool_bool_desc$"

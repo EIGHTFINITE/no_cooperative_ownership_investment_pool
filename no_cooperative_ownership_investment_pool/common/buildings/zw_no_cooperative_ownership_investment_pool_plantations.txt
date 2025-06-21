@@ -16,6 +16,21 @@ building_coffee_plantation = {
 		pmg_base_building_coffee_plantation
 		pmg_train_automation_building_coffee_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -37,6 +52,21 @@ building_cotton_plantation = {
 		pmg_base_building_cotton_plantation
 		pmg_train_automation_building_cotton_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -72,6 +102,21 @@ building_dye_plantation = {
 		pmg_base_building_dye_plantation
 		pmg_train_automation_building_dye_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -112,6 +157,17 @@ building_opium_plantation = {
 		owner = { NOT = { is_banning_goods = g:opium } }
 	}
 	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
 		owner = { NOT = { is_banning_goods = g:opium } }
 	}
 	ownership_type = self
@@ -149,6 +205,21 @@ building_tea_plantation = {
 		pmg_base_building_tea_plantation
 		pmg_train_automation_building_tea_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -184,6 +255,21 @@ building_tobacco_plantation = {
 		pmg_base_building_tobacco_plantation
 		pmg_train_automation_building_tobacco_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -219,6 +305,21 @@ building_sugar_plantation = {
 		pmg_base_building_sugar_plantation
 		pmg_train_automation_building_sugar_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -240,6 +341,21 @@ building_banana_plantation = {
 		pmg_base_building_banana_plantation
 		pmg_train_automation_building_banana_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -261,6 +377,21 @@ building_silk_plantation = {
 		pmg_base_building_silk_plantation
 		pmg_train_automation_building_silk_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -282,6 +413,21 @@ building_vineyard_plantation = {
 		pmg_base_building_vineyard_plantation
 		pmg_train_automation_building_vineyard_plantation
 	}
+
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
+			}
+		}
+	}
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"

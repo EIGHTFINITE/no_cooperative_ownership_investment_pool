@@ -1,3 +1,7 @@
 ﻿l_german:
  law_command_economy_tt:0 "Kann [GetLawType('law_command_economy').GetName] erlassen"
  modifier_cooperative_ownership_command_economy_swap:0 "$from_command_economy$"
+ country_disable_investment_pool_bool:0 "Investitionsfonds-Verbot"
+ country_disable_investment_pool_bool_desc:0 "Alle Reinvestitionen in den [concept_investment_pool] sowie auch dessen Nutzung verbieten"
+ country_custom_tooltip_fake_disable_investment_pool_bool:0 "$country_disable_investment_pool_bool$"
+ country_custom_tooltip_fake_disable_investment_pool_bool_desc:0 "$country_disable_investment_pool_bool_desc$"
