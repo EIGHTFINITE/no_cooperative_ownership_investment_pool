@@ -21,10 +21,13 @@
 		exists = scope:investor_country
 		NAND = {
 			owner = scope:investor_country
-			owner = {
-				OR = {
-					has_law = law_type:law_cooperative_ownership
-					has_law = law_type:law_command_economy
+			OR = {
+				bring_back_directly_controlled_investment_pool = yes
+				owner = {
+					OR = {
+						has_law = law_type:law_cooperative_ownership
+						has_law = law_type:law_command_economy
+					}
 				}
 			}
 		}
@@ -59,10 +62,13 @@ building_iron_mine = {
 		exists = scope:investor_country
 		NAND = {
 			owner = scope:investor_country
-			owner = {
-				OR = {
-					has_law = law_type:law_cooperative_ownership
-					has_law = law_type:law_command_economy
+			OR = {
+				bring_back_directly_controlled_investment_pool = yes
+				owner = {
+					OR = {
+						has_law = law_type:law_cooperative_ownership
+						has_law = law_type:law_command_economy
+					}
 				}
 			}
 		}
@@ -96,10 +102,13 @@ building_lead_mine = {
 		exists = scope:investor_country
 		NAND = {
 			owner = scope:investor_country
-			owner = {
-				OR = {
-					has_law = law_type:law_cooperative_ownership
-					has_law = law_type:law_command_economy
+			OR = {
+				bring_back_directly_controlled_investment_pool = yes
+				owner = {
+					OR = {
+						has_law = law_type:law_cooperative_ownership
+						has_law = law_type:law_command_economy
+					}
 				}
 			}
 		}
@@ -133,10 +142,13 @@ building_sulfur_mine = {
 		exists = scope:investor_country
 		NAND = {
 			owner = scope:investor_country
-			owner = {
-				OR = {
-					has_law = law_type:law_cooperative_ownership
-					has_law = law_type:law_command_economy
+			OR = {
+				bring_back_directly_controlled_investment_pool = yes
+				owner = {
+					OR = {
+						has_law = law_type:law_cooperative_ownership
+						has_law = law_type:law_command_economy
+					}
 				}
 			}
 		}
@@ -174,10 +186,13 @@ building_gold_mine = {
 		exists = scope:investor_country
 		NAND = {
 			owner = scope:investor_country
-			owner = {
-				OR = {
-					has_law = law_type:law_cooperative_ownership
-					has_law = law_type:law_command_economy
+			OR = {
+				bring_back_directly_controlled_investment_pool = yes
+				owner = {
+					OR = {
+						has_law = law_type:law_cooperative_ownership
+						has_law = law_type:law_command_economy
+					}
 				}
 			}
 		}
