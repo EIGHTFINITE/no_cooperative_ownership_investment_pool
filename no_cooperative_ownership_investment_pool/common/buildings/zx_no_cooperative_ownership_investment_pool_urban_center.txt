@@ -28,10 +28,13 @@ building_arts_academy = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -91,10 +94,13 @@ building_power_plant = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}

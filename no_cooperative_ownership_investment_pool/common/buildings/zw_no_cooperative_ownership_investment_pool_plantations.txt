@@ -24,10 +24,13 @@ building_coffee_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -63,10 +66,13 @@ building_cotton_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -116,10 +122,13 @@ building_dye_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -225,10 +234,13 @@ building_tea_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -278,10 +290,13 @@ building_tobacco_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -331,10 +346,13 @@ building_sugar_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -370,10 +388,13 @@ building_banana_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -409,10 +430,13 @@ building_silk_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -448,10 +472,13 @@ building_vineyard_plantation = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}

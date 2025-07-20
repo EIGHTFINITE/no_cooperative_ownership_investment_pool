@@ -29,10 +29,13 @@ building_rye_farm = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -73,10 +76,13 @@ building_wheat_farm = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -117,10 +123,13 @@ building_rice_farm = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -161,10 +170,13 @@ building_maize_farm = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -205,10 +217,13 @@ building_millet_farm = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -250,10 +265,13 @@ building_livestock_ranch = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}

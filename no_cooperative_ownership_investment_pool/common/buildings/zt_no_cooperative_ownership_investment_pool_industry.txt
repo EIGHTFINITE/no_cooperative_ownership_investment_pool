@@ -28,10 +28,13 @@ building_food_industry = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -70,10 +73,13 @@ building_textile_mills = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -112,10 +118,13 @@ building_furniture_manufacturies = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -152,10 +161,13 @@ building_glassworks = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -196,10 +208,13 @@ building_tooling_workshops = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -238,10 +253,13 @@ building_paper_mills = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -288,10 +306,13 @@ building_chemical_plants = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -338,10 +359,13 @@ building_explosives_factory = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -388,10 +412,13 @@ building_synthetics_plants = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -440,10 +467,13 @@ building_steel_mills = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -490,10 +520,13 @@ building_motor_industry = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -533,10 +566,13 @@ building_shipyards = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -576,10 +612,13 @@ building_military_shipyards = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -628,10 +667,13 @@ building_automotive_industry = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -678,10 +720,13 @@ building_electrics_industry = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -719,10 +764,13 @@ building_arms_industry = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -760,10 +808,13 @@ building_artillery_foundries = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
@@ -812,10 +863,13 @@ building_munition_plants = {
 			owner = scope:investor_country
 			OR = {
 				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
+				AND = {
+					no_cooperative_ownership_investment_pool = yes
+					owner = {
+						OR = {
+							has_law = law_type:law_cooperative_ownership
+							has_law = law_type:law_command_economy
+						}
 					}
 				}
 			}
