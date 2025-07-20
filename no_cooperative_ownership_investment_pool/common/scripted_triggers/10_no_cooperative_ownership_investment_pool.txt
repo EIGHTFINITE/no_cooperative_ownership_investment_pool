@@ -1,4 +1,8 @@
-﻿# Placeholders for Improved Auto-Expand compatibility. Without it these triggers use the same numbers as vanilla.
+﻿no_cooperative_ownership_investment_pool = {
+	always = yes
+}
+
+# Placeholders for Improved Auto-Expand compatibility. Without it these triggers use the same numbers as vanilla.
 xor_railway_auto_expand_rule = {
 	occupancy >= 0.8
 	OR = {
