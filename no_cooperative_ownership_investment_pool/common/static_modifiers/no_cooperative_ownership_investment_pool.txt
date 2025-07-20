@@ -2,12 +2,10 @@
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	state_shopkeepers_investment_pool_efficiency_mult = -0.25
 	state_farmers_investment_pool_efficiency_mult = -0.25
-	country_private_construction_allocation_mult = -0.35
 	country_authority_mult = 0.25
 	country_bureaucrats_pol_str_mult = 0.25
 	building_nationalization_cost_mult = -0.5
 	building_nationalization_radicals_mult = -0.75
 	country_government_dividends_efficiency_add = 0.4
-	country_private_construction_allocation_mult = 0.1
 	country_leverage_resistance_mult = 0.25
 }
