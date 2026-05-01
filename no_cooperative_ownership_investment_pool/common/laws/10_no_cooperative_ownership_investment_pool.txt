@@ -9,6 +9,10 @@
 		anarchism
 	}
 
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
 	modifier = {
 		state_pop_pol_str_add = 1
 		country_legitimacy_govt_total_clout_add = 100
@@ -18,18 +22,11 @@
 	}
 
 	can_enact = {
-		OR = {
-			has_technology_researched = socialism
-			has_technology_researched = corporatism
-		}
-		OR = {
-			has_law = law_type:law_council_republic
-			has_law = law_type:law_corporate_state
-		}
 		trigger_if = {
 			limit = {
 				c:BIC ?= ROOT
 				is_subject = yes
+				NOT = { has_law = scope:law }
 			}
 			custom_tooltip = {
 				text = BIC_not_able_to_change_distribution_of_power_tt
@@ -40,12 +37,7 @@
 
 	on_activate = {
 		scripted_effect_parties_disappearence = yes
-		if = {
-			limit = {
-				has_modifier = missouri_compromise
-			}
-			remove_modifier = missouri_compromise
-		}
+		cleanup_voting_strength_modifiers = yes
 	}
 
 	ai_will_do = {
@@ -88,7 +80,7 @@
 				has_law = law_type:law_anarchy
 				has_strategy = ai_strategy_egalitarian_agenda
 				scope:target_country = { # Is their law different enough from what we want to impose?
-					NOT = { has_law = law_type:law_universal_suffrage }
+					NOT = { has_law_or_variant = law_type:law_universal_suffrage }
 				}
 			}
 
@@ -120,90 +112,30 @@ law_cooperative_ownership = {
 
 	disallowing_laws = {
 		law_serfdom
+		law_women_in_the_fields
 	}
 
-	can_enact = {
-		OR = {
-			has_technology_researched = socialism
-			has_technology_researched = corporatism
-		}
-		OR = {
-			has_law = law_type:law_council_republic
-			has_law = law_type:law_corporate_state
-			trigger_if = {
-				limit = {
-					NOT = { has_law = law_type:law_council_republic }
-					NOT = { has_law = law_type:law_corporate_state }
-					has_technology_researched = central_planning
-				}
-				custom_tooltip = {
-					text = law_command_economy_tt
-					AND = {
-						NOT = { has_law = law_type:law_serfdom }
-						NOT = { has_law = law_type:law_anarchy }
-						OR = {
-							has_law = law_type:law_autocracy
-							has_law = law_type:law_oligarchy
-							has_law = law_type:law_single_party_state
-							has_law = law_type:law_technocracy
-						}
-					}
-				}
-			}
-		}
+	unlocking_laws = {
+		law_council_republic
+		law_corporate_state
+		# No Social Monarchy
 	}
 
 	on_activate = {
-		if = {
-			limit = {
-				bring_back_directly_controlled_investment_pool = yes
-			}
-		}
-		else = {
-			hidden_effect = {
-				set_variable = { name = seize_investment_pool_gold_transfer_var value = investment_pool }
-				add_treasury = {
-					value = var:seize_investment_pool_gold_transfer_var
-					multiply = -1.0
-				}
-			}
-			seize_investment_pool = yes
-			hidden_effect = {
-				add_investment_pool = var:seize_investment_pool_gold_transfer_var
-				remove_variable = seize_investment_pool_gold_transfer_var
-			}
-		}
 		custom_tooltip = {
 			text = enact_law_radical_leftist_economy_warning_desc
-		}
-		if = {
-			limit = {
-				NOT = { has_law = law_type:law_council_republic }
-				NOT = { has_law = law_type:law_corporate_state }
-				has_technology_researched = central_planning
-				NOT = { has_law = law_type:law_anarchy }
-				OR = {
-					has_law = law_type:law_autocracy
-					has_law = law_type:law_oligarchy
-					has_law = law_type:law_single_party_state
-					has_law = law_type:law_technocracy
-				}
-			}
-			add_modifier = { name = modifier_cooperative_ownership_command_economy_swap }
 		}
 	}
 
 	modifier = {
-		country_custom_tooltip_fake_disable_investment_pool_bool = yes
-
 		state_shopkeepers_investment_pool_efficiency_mult = 0.25
 		state_farmers_investment_pool_efficiency_mult = 0.25
-		country_private_construction_allocation_mult = 0.1
+		country_private_construction_allocation_mult = 0.35
 		country_government_dividends_reinvestment_add = 1.0
+		building_company_worker_dividends_add = 0.75
 		country_free_charters_add = 1
 
 		building_group_bg_manufacturing_allowed_collectivization_add = 1.0
-		building_group_bg_mining_allowed_collectivization_add = 1.0
 		building_group_bg_extraction_allowed_collectivization_add = 1.0
 		building_group_bg_power_allowed_collectivization_add = 1.0
 		building_group_bg_private_infrastructure_allowed_collectivization_add = 1.0
@@ -222,16 +154,9 @@ law_cooperative_ownership = {
 
 		if = {
 			limit = {
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
-			add = 250
-		}
-
-		if = {
-			limit = {
-				has_law = law_type:law_council_republic
-			}
-			add = 100
+			add = 400
 		}
 	}
 
