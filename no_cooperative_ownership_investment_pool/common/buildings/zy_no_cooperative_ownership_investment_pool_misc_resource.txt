@@ -4,7 +4,7 @@
 	city_type = wood
 	required_construction = construction_cost_low
 	terrain_manipulator = forestry
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 
 	production_method_groups = {
 		pmg_base_building_logging_camp
@@ -12,27 +12,6 @@
 		pmg_equipment
 		pmg_transportation_building_logging_camp
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
@@ -50,33 +29,13 @@ building_rubber_plantation = {
 	}
 
 	city_type = wood
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 
 	production_method_groups = {
 		pmg_base_building_rubber_plantation
+		pmg_rubber_exploitation
 		pmg_train_automation_building_rubber_plantation
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
@@ -86,6 +45,7 @@ building_fishing_wharf = {
 	building_group = bg_fishing
 	icon = "gfx/interface/icons/building_icons/fishing_wharf.dds"
 	city_type = port
+	levels_per_mesh = 1
 	required_construction = construction_cost_low
 
 	production_method_groups = {
@@ -96,27 +56,6 @@ building_fishing_wharf = {
 	potential = {
 		is_sea_adjacent = yes
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_fishing.dds"
@@ -126,6 +65,7 @@ building_whaling_station = {
 	building_group = bg_whaling
 	icon = "gfx/interface/icons/building_icons/whaling_station.dds"
 	city_type = port
+	levels_per_mesh = 1
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {
@@ -140,27 +80,6 @@ building_whaling_station = {
 	potential = {
 		is_sea_adjacent = yes
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_fishing.dds"
@@ -171,7 +90,7 @@ building_oil_rig = {
 	building_group = bg_oil_extraction
 	icon = "gfx/interface/icons/building_icons/oil_rig.dds"
 	city_type = mine
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 	required_construction = construction_cost_medium
 
 	unlocking_technologies = {
@@ -182,27 +101,6 @@ building_oil_rig = {
 		pmg_base_building_oil_rig
 		pmg_transportation_building_oil_rig
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_oil.dds"

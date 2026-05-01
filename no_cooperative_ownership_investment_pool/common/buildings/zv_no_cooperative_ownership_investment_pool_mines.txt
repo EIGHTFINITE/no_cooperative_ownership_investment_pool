@@ -1,8 +1,8 @@
 ﻿building_coal_mine = {
-	building_group = bg_coal_mining
+	building_group = bg_mining
 	icon = "gfx/interface/icons/building_icons/coal_mine.dds"
 	city_type = mine
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 	required_construction = construction_cost_medium
 	terrain_manipulator = mining
 	unlocking_technologies = {
@@ -15,37 +15,31 @@
 		pmg_steam_automation_building_coal_mine
 		pmg_train_automation_building_coal_mine
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+	
+	ai_value = {
+		value = 1000
+
+		if = { # Colonisation of Korea
+			limit = {
+				owner ?= {
+					c:JAP ?= this
+					has_journal_entry = je_colonize_korea
+				}
+				is_in_geographic_region = geographic_region_korea
+			}
+			add = 2000
+		}
+	}
 }
 
 building_iron_mine = {
-	building_group = bg_iron_mining
+	building_group = bg_mining
 	icon = "gfx/interface/icons/building_icons/iron_mine.dds"
 	city_type = mine
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 	required_construction = construction_cost_medium
 	terrain_manipulator = mining
 
@@ -59,37 +53,31 @@ building_iron_mine = {
 		pmg_steam_automation_building_iron_mine
 		pmg_train_automation_building_iron_mine
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+	
+	ai_value = {
+		value = 1000
+
+		if = { # Colonisation of Korea
+			limit = {
+				owner ?= {
+					c:JAP ?= this
+					has_journal_entry = je_colonize_korea
+				}
+				is_in_geographic_region = geographic_region_korea
+			}
+			add = 2000
+		}
+	}
  }
 
 building_lead_mine = {
-	building_group = bg_lead_mining
+	building_group = bg_mining
 	icon = "gfx/interface/icons/building_icons/lead_mine.dds"
 	city_type = mine
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 	required_construction = construction_cost_medium
 	terrain_manipulator = mining
 	unlocking_technologies = {
@@ -102,37 +90,31 @@ building_lead_mine = {
 		pmg_steam_automation_building_lead_mine
 		pmg_train_automation_building_lead_mine
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+	
+	ai_value = {
+		value = 1000
+
+		if = { # Colonisation of Korea
+			limit = {
+				owner ?= {
+					c:JAP ?= this
+					has_journal_entry = je_colonize_korea
+				}
+				is_in_geographic_region = geographic_region_korea
+			}
+			add = 2000
+		}
+	}
  }
 
 building_sulfur_mine = {
-	building_group = bg_sulfur_mining
+	building_group = bg_mining
 	icon = "gfx/interface/icons/building_icons/sulfur_mine.dds"
 	city_type = mine
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 	required_construction = construction_cost_medium
 	terrain_manipulator = mining
 	unlocking_technologies = {
@@ -145,37 +127,31 @@ building_sulfur_mine = {
 		pmg_steam_automation_building_sulfur_mine
 		pmg_train_automation_building_sulfur_mine
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+	
+	ai_value = {
+		value = 1000
+
+		if = { # Colonisation of Korea
+			limit = {
+				owner ?= {
+					c:JAP ?= this
+					has_journal_entry = je_colonize_korea
+				}
+				is_in_geographic_region = geographic_region_korea
+			}
+			add = 2000
+		}
+	}
  }
 
 building_gold_mine = {
-	building_group = bg_gold_mining
+	building_group = bg_mining
 	icon = "gfx/interface/icons/building_icons/gold_mine.dds"
 	city_type = mine
-	levels_per_mesh = 5
+	levels_per_mesh = 50
 	required_construction = construction_cost_medium
 	terrain_manipulator = mining
 
@@ -192,27 +168,6 @@ building_gold_mine = {
 		pmg_steam_automation_building_gold_mine
 		pmg_train_automation_building_gold_mine
 	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
-	}
-
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"

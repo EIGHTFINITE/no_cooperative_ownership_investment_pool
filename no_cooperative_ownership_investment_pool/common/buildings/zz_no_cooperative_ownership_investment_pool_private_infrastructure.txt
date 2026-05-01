@@ -3,6 +3,7 @@
 building_port = {
 	building_group = bg_private_infrastructure
 	city_type = port
+	levels_per_mesh = 1
 	icon = "gfx/interface/icons/building_icons/building_port.dds"
 
 	port = yes
@@ -19,26 +20,6 @@ building_port = {
 
 	potential = {
 		is_coastal = yes
-	}
-
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
-				}
-			}
-		}
 	}
 
 	ownership_type = self
@@ -162,14 +143,44 @@ building_railway = {
 			}
 			add = 10000
 		}
+		else_if = { # AI Metternich wants railways
+			limit = {
+				owner ?= {
+					c:AUS ?= this
+					has_journal_entry = je_metternich
+				}
+				is_incorporated = yes
+				NOR = {
+					has_building = building_railway
+					any_scope_building = {
+						is_building_type = building_railway
+						is_under_construction = yes
+					}
+				}
+			}
+            add = 10000
+		}
+		else_if = { # Portugal - Regeneration
+			limit = {
+				owner = {
+					has_journal_entry = je_portugal_regeneration_public_works
+				}
+				is_incorporated = yes
+				NOR = {
+					has_building = building_railway
+					any_scope_building = {
+						is_building_type = building_railway
+						is_under_construction = yes
+					}
+				}
+			}
+		}
 
 		if = { # Manchurian Railway
 			limit = {
 				exists = c:RUS
 				c:RUS ?= owner
-				OR = {
-					region = sr:region_manchuria
-				}
+				is_in_geographic_region = geographic_region_manchuria_old
 				any_scope_building = {
 					is_building_type = building_railway
 					levels_owned_by_country = {
@@ -180,30 +191,41 @@ building_railway = {
 			}
 			add = 10000
 		}
-	}
 
-	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				AND = {
-					no_cooperative_ownership_investment_pool = yes
-					owner = {
-						OR = {
-							has_law = law_type:law_cooperative_ownership
-							has_law = law_type:law_command_economy
-						}
-					}
+		if = { # Colonisation of Korea
+			limit = {
+				owner ?= {
+					c:JAP ?= this
+					has_journal_entry = je_colonize_korea
+				}
+				is_in_geographic_region = geographic_region_korea
+				any_scope_building = {
+					is_building_type = building_railway
+					level < 10
 				}
 			}
+			add = 10000
 		}
 	}
 
 	should_auto_expand = {
-		xor_railway_auto_expand_rule = yes
+		occupancy >= 0.8
+		OR = {
+			cash_reserves_ratio > 0.5
+			is_subsidized = yes
+		}
+		OR = {
+			state = {
+				sg:transportation = {
+					state_goods_pricier > 0.5
+				}
+			}
+			state = {
+				infrastructure_delta <= -20
+			}
+		}
+		NOT = { is_under_construction = yes }
+
 	}
 	ownership_type = self
 
@@ -213,7 +235,7 @@ building_railway = {
 building_trade_center = {
 	building_group = bg_trade
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 50
 
 	lens = infrastructure
 
@@ -229,25 +251,11 @@ building_trade_center = {
 	can_build_government = {
 		trade_center_construction_allowed = yes
 	}
-	
+
 	can_build_private = {
-		exists = owner
-		exists = scope:investor_country
-		NAND = {
-			owner = scope:investor_country
-			OR = {
-				bring_back_directly_controlled_investment_pool = yes
-				owner = {
-					OR = {
-						has_law = law_type:law_cooperative_ownership
-						has_law = law_type:law_command_economy
-					}
-				}
-			}
-		}
 		trade_center_construction_allowed = yes
 	}
-		
+
 	ownership_type = self
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
