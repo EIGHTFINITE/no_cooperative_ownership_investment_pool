@@ -1,6 +1,6 @@
 ﻿# URBANIZATION
 
-INJECT:building_arts_academy = {
+INJECT:building_art_academy = {
 	can_build_private = {
 		exists = owner
 		exists = scope:investor_country
