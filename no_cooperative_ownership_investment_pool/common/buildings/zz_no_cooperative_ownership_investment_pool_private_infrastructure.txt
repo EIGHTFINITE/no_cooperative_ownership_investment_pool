@@ -200,6 +200,23 @@ REPLACE:building_railway = {
 		}
 	}
 
+	can_build_private = {
+		exists = owner
+		exists = scope:investor_country
+		NAND = {
+			owner = scope:investor_country
+			OR = {
+				bring_back_directly_controlled_investment_pool = yes
+				owner = {
+					OR = {
+						has_law = law_type:law_cooperative_ownership
+						has_law = law_type:law_command_economy
+					}
+				}
+			}
+		}
+	}
+
 	should_auto_expand = {
 		occupancy >= 0.8
 		OR = {
