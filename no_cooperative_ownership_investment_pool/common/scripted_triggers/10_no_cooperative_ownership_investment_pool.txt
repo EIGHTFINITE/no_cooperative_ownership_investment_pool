@@ -1,3 +1,0 @@
-﻿no_cooperative_ownership_investment_pool = {
-	always = yes
-}

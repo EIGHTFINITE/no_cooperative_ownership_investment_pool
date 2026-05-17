@@ -1,0 +1,23 @@
+﻿no_cooperative_ownership_investment_pool = {
+	always = yes
+}
+
+# Placeholder for Improved Auto-Expand compatibility. Without it installed the game will use vanilla rules
+xor_railway_auto_expand_rule = {
+	occupancy >= 0.8
+	OR = {
+		cash_reserves_ratio > 0.5
+		is_subsidized = yes
+	}
+	OR = {
+		state = {
+			sg:transportation = {
+				state_goods_pricier > 0.5
+			}
+		}
+		state = {
+			infrastructure_delta <= -20
+		}
+	}
+	NOT = { is_under_construction = yes }
+}

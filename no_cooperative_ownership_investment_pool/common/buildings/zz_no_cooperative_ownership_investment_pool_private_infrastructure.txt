@@ -218,23 +218,7 @@ REPLACE:building_railway = {
 	}
 
 	should_auto_expand = {
-		occupancy >= 0.8
-		OR = {
-			cash_reserves_ratio > 0.5
-			is_subsidized = yes
-		}
-		OR = {
-			state = {
-				sg:transportation = {
-					state_goods_pricier > 0.5
-				}
-			}
-			state = {
-				infrastructure_delta <= -20
-			}
-		}
-		NOT = { is_under_construction = yes }
-
+		xor_railway_auto_expand_rule = yes
 	}
 	ownership_type = self
 
